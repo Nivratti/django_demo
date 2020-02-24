@@ -39,3 +39,14 @@ $ pipenv shell
 
 Load the site at [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
+
+
+## Endpoints
+
+Login with your superuser account. Then navigate to all users. Logout. Sign up for a new account and repeat the login, users, logout flow.
+
+- login - http://127.0.0.1:8000/api/v1/rest-auth/login/
+- user details - http://127.0.0.1:8000/api/v1/rest-auth/user/
+- logout - http://127.0.0.1:8000/api/v1/rest-auth/logout/
+- signup - http://127.0.0.1:8000/api/v1/rest-auth/registration/
+
