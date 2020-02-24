@@ -7,18 +7,18 @@ from django.urls import path, include
 import notifications.urls
 
 
-admin.site.site_header = 'Behavior Analysis Administration'                    # default: "Django Administration"
-admin.site.index_title = 'Site administration'                 # default: "Site administration"
-admin.site.site_title = 'Behavior Analysis admin' # default: "Django site admin"
+admin.site.site_header = 'Administration'                    # default: "Django Administration"
+admin.site.index_title = 'administration'                 # default: "Site administration"
+admin.site.site_title = 'Analysis admin' # default: "Django site admin"
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('user/', include('user.urls')),
+    path('', include('user.urls')),
     path('users/', include('django.contrib.auth.urls')),
-    # path('accounts/', include('allauth.urls')),
-    # path('inbox/notifications/', include(notifications.urls, namespace='notifications')),
-    # path("misc/", include("misc.urls")),
+    path('accounts/', include('allauth.urls')),
+    path('inbox/notifications/', include(notifications.urls, namespace='notifications')),
+    path("misc/", include("misc.urls")),
 
     path('api/v1/', include('api.urls')),
     path('api-auth/', include('rest_framework.urls')),

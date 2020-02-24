@@ -6,6 +6,6 @@ from . import views
 app_name = 'user'
 
 urlpatterns = [
-    path('', views.UserListView.as_view()),
-    path('handle_login/', views.handle_login, name='handle_login'),
+    path('', views.handle_login, name='handle_login'),
+    path('list/', views.UserListView.as_view()),
 ]

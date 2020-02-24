@@ -1,11 +1,13 @@
 from django.shortcuts import render, redirect
 from rest_framework import generics
+from django.contrib.auth.decorators import login_required
 
 from . import models
 from . import serializers
 
 # Create your views here.
 
+@login_required()
 def handle_login(request):
     """
     Handle user login

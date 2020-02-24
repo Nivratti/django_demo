@@ -5,7 +5,7 @@ from .models import CustomUser
 from .choices import USER_TYPE_CHOICES
 
 class CustomUserCreationForm(UserCreationForm):
-    avatar = forms.FileField(widget=forms.FileInput(attrs={'accept':'image/*'}))
+    avatar = forms.FileField(required=False, widget=forms.FileInput(attrs={'accept':'image/*'}))
     class Meta(UserCreationForm.Meta):
         model = CustomUser
         fields = ['username', 'email', 'first_name', 'last_name', 'avatar']
