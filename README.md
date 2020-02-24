@@ -13,28 +13,27 @@ A prototype for launching new Django projects quickly. Implemented Custom user m
 
 ```
 $ git clone https://github.com/Nivratti/django_demo.git
-$ cd djangox
-$ pipenv install
-$ pipenv shell
+$ cd django
+$ pip install -r requirements.txt
 ```
 
 3.  Set up the initial migration for our custom user models in `users` and build the database.
 
 ```
-(djangox) $ python manage.py makemigrations users
-(djangox) $ python manage.py migrate
+(django) $ python manage.py makemigrations users
+(django) $ python manage.py migrate
 ```
 
 4.  Create a superuser:
 
 ```
-(djangox) $ python manage.py createsuperuser
+(django) $ python manage.py createsuperuser
 ```
 
 5.  Confirm everything is working:
 
 ```
-(djangox) $ python manage.py runserver
+(django) $ python manage.py runserver
 ```
 
 Load the site at [http://127.0.0.1:8000](http://127.0.0.1:8000).
