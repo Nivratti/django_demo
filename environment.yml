@@ -1,0 +1,34 @@
+# ********************************************************
+# Creating an environment from an environment.yml file
+# ********************************************************
+# 1) Create the environment from the environment.yml file.
+#     conda env create -f environment.yml
+#
+# ========================================================
+
+
+# ********************************************************
+# Updating an environment
+# ********************************************************
+# conda env update --file environment.yml
+
+# ********************************************************
+# Removing an environment
+# ********************************************************
+# conda remove --name myenv --all
+
+
+name: env_project_name
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.7.4
+  - django=2.2
+
+  - pip:
+    - django-allauth
+    - django-crispy-forms
+    - django-notifications-hq
+    - django-debug-toolbar

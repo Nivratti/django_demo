@@ -1,0 +1,61 @@
+{% extends "common/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block title %}Sign up{% endblock %}
+
+<!-- make empty navbar and sidebar -->
+{% block navbar %}{% endblock %}
+{% block sidebar %}{% endblock %}
+
+{% block content %}
+<style>
+  .page-content
+  {
+    background: url({% static 'assets/images/bg-01.webp'%});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .content:first-child {
+    padding-top: 50px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .middle
+  {
+    margin: 0 auto;
+    float: none;
+  }
+
+  .invalid-feedback
+  {
+      color: #ff0000e0;
+  }
+</style>
+
+<div class="row margin-lg">
+  <div class="col-md-6 middle">
+    <div class="panel panel-flat">
+      <div class="panel-heading">
+        <h2 class="panel-title">Sign up<a class="heading-elements-toggle"><i class="icon-more"></i></a></h2>
+        <div class="heading-elements">
+          <ul class="icons-list">
+            <li><a data-action="collapse"></a></li>
+            <li><a data-action="reload"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="panel-body">
+        
+        <form method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          {{ form|crispy }}
+          <button class="btn btn-success" type="submit">Sign up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

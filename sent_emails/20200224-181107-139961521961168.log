@@ -1,0 +1,18 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: [example.com] Please Confirm Your E-mail Address
+From: webmaster@localhost
+To: abrtgyhj@gmail.com
+Date: Mon, 24 Feb 2020 12:41:07 -0000
+Message-ID: <158254806725.12706.7761372424950001983@nivratti-pc>
+
+Hello from example.com!
+
+You're receiving this e-mail because user abrtgyhj has given yours as an e-mail address to connect their account.
+
+To confirm this is correct, go to http://127.0.0.1:8000/accounts/confirm-email/NA:1j6D2p:puA7vQnUvC7ZZbYuD52AeGxkh-4/
+
+Thank you from example.com!
+example.com
+-------------------------------------------------------------------------------
