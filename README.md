@@ -1,6 +1,11 @@
 Django Demo
 A prototype for launching new Django projects quickly. Implemented Custom user model and rest api.
 
+## Features
+- Custom user model
+- Token-based auth
+- Signup/login/logout
+
 ## First-time setup
 
 1.  Make sure Python 3.7x and Pipenv are already installed.
